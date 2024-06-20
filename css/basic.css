@@ -1,0 +1,12 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    width: 360px;
+    
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: #25202F;
+}
