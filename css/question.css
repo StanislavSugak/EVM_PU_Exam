@@ -1,0 +1,21 @@
+.img_big{
+    height: 200px;
+    width: 200px;
+    margin: 15px auto;
+}
+
+main > p{
+    padding: 5px 0;
+}
+
+main{
+    align-items: start;
+}
+
+p.list{
+    padding: 0px;
+}
+
+.glav{
+    margin: 10px auto;
+}
