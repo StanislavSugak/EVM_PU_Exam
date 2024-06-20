@@ -1,7 +1,7 @@
 body{
     margin: 0 auto;
     padding: 0;
-    background-color: aqua;
+    background-color: #141218;
 }
 
 /*-----header-----*/
@@ -97,12 +97,16 @@ main{
     background-color: #ffffff8a;
 }
 
-.container.no_show{
-    display: none;
+.nothing-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px - 65px - 65px - 70px);
+    width: 100%;
 }
 
-.container.show{
-    display: flex;
+.no_show{
+    display: none;
 }
 /*-----main-----*/
 

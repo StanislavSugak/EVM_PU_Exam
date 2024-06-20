@@ -2,9 +2,11 @@ const p = main.querySelectorAll('p');
 const p_values = Array.from(p).map(item => item.textContent);
 
 const container = document.querySelectorAll('.container');
+const container_nothing = document.querySelector('.nothing-content');
 
 const input = main.querySelector('input');
 input.addEventListener('input', search_question);
+
 
 var filteredContainerValues = [];
 
@@ -20,6 +22,13 @@ function search_question() {
     
         p_values.filter((text, index) => search_list(text, searchInput, index));
         filteredContainerValues.forEach(item => item.classList.remove('no_show'));
+
+        if(filteredContainerValues.length == 0){
+            container_nothing.classList.remove('no_show');
+        }
+        else{
+            container_nothing.classList.add('no_show');
+        }
     }
 }
 
