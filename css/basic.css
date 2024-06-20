@@ -11,7 +11,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 50px;
+    padding: 0 80px;
 }
 
 main{
@@ -23,7 +23,18 @@ main{
 }
 
 .container{
-    width: 100%;
-    height: 80px;
+    width: calc(100% - 40px);
+    height: fit-content;
     border: 1px solid #fff;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+    padding: 20px;
+}
+
+.container:hover{
+    background-color: #ffffff8a;
 }
