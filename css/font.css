@@ -8,6 +8,17 @@
     color: white;
 }
 
+.text-Poppins13{
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+}
+
+
 .text-Poppins12{
     font-family: 'Poppins', sans-serif;
     font-size: 12px;

@@ -1,18 +1,19 @@
 body{
     margin: 0 auto;
     padding: 0;
-    width: 360px;
     background-color: aqua;
 }
 
+/*-----header-----*/
 header{
     position: relative;
     height: 50px;
-    background-color: #25202F;
+    background-color: #141218;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 0 80px;
+    gap: 80px;
 }
 
 header a{
@@ -26,37 +27,92 @@ header a{
     position: absolute;
     top: 15px;
     left: 20px;
+    cursor: pointer;
 }
 
+/*-----header-----*/
+
+
+/*-----main-----*/
 main{
     height: fit-content;
     width: calc(100% - 60px);
     padding: 30px;
-    background-color: #25202F;
-    border-top: 5px solid black;
+    background-color: #141218;
+    border-top: 5px solid #fff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/*tag*/
+
+
+/*search*/
+.search{
+    width: 100%;
+    height: 70px;
+    margin: -10px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    max-width: 300px;
+    background-color: #141218;
 }
 
+.search input{
+    border: none;
+    outline: none;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    padding: 10px;
+    background-color: #141218;
+}
+
+.search input::placeholder{
+    color: #fff;
+
+}
+/*search*/
+
+
+/*container text*/
 .container{
-    width: calc(100% - 40px);
+    width: calc(100% - 30px);
     height: fit-content;
     border: 1px solid #fff;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 1s;
-    padding: 20px;
+    padding: 15px;
+    max-width: 300px;
+    cursor: pointer;
 }
 
 .container:hover{
     background-color: #ffffff8a;
 }
 
+.container.no_show{
+    display: none;
+}
+
+.container.show{
+    display: flex;
+}
+/*-----main-----*/
+
+
+/*-----footer-----*/
 footer{
     height: fit-content;
     width: calc(100% - 60px);
     padding: 30px;
-    background-color: #25202F;
-    border-top: 5px solid black;
+    background-color: #141218;
+    border-top: 5px solid #fff;
 }
+/*-----footer-----*/
